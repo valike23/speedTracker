@@ -19,7 +19,6 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 if(navigator.geolocation){
-			console.log(navigator);
             navigator.geolocation.getCurrentPosition((position)=>{
                 position.coords.latitude;
                 position.coords.longitude;
@@ -54,8 +53,8 @@ if(navigator.geolocation){
         border-radius: 50%;
         background-color: white;
         box-shadow: 1px;
-        top: 90vh;
-        left: 89vw;
+        top: 81vh;
+        left: 80vw;
         text-align: center;
         padding-top: 2px;
     }

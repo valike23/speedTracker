@@ -53,12 +53,12 @@ if(navigator.geolocation){
         border-radius: 50%;
         background-color: white;
         box-shadow: 1px;
-        top: 81vh;
+        top: 79vh;
         left: 80vw;
         text-align: center;
         padding-top: 2px;
     }
     .speed-button > h3 {
-        margin-bottom: -10px;
+        margin-bottom: -17px;
     }
 </style>

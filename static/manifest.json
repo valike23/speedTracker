@@ -1,19 +1,19 @@
 {
 	"background_color": "#ffffff",
 	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"name": "SpeedTracker",
+	"short_name": "SPEED",
 	"display": "minimal-ui",
-	"start_url": "/",
+	"start_url": "/map",
 	"icons": [
 		{
-			"src": "logo-192.png",
+			"src": "img/logo192.png",
 			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "any maskable"
 		},
 		{
-			"src": "logo-512.png",
+			"src": "img/logo512.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "any maskable"

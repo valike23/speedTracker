@@ -1,16 +1,13 @@
 <script>
 	import successkid from 'images/successkid.jpg';
 import { onMount } from 'svelte';
-const refreshLocation = () =>{
-
+const refreshLocation = (position) =>{
+	console.log(position);
 }
 	onMount(()=>{
 		if(navigator.geolocation){
 			console.log(navigator);
-			navigator.geolocation.getCurrentPosition((position)=>{
-				alert(JSON.stringify(position.coords));
-				console.log(position);
-			})
+			navigator.geolocation.watchPosition(refreshLocation);
 		}
 		else{
 			alert('No geolocation API on your browser F*** out')

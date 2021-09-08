@@ -2,7 +2,7 @@
 	"background_color": "#ffffff",
 	"theme_color": "#333333",
 	"name": "SpeedTracker",
-	"short_name": "SPEED",
+	"short_name": "speed",
 	"display": "minimal-ui",
 	"start_url": "/map",
 	"icons": [

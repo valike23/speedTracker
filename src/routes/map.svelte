@@ -105,7 +105,7 @@
     <div class="weather row">
         <div class="col-6">
             {#if air}
-            <button type="button" class="btn btn-primary btn-lg">
+            <button type="button" class:btn-primary={air == 'Good'} class:btn-success={air == 'Moderate'} class:btn-warning={air == 'Slightly Unhealthy' || air == 'Unhealthy'} class:btn-danger={air == 'Very Unhealty' || air == 'Hazardous'}  class="btn  btn-lg">
                 <small>air quality</small><span class="badge bg-secondary">{air}</span>
               </button>
             {:else}

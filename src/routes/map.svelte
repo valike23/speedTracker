@@ -112,7 +112,7 @@
                  <!-- else content here -->
             {/if}
         </div>
-        <div class="col-6 float-right "><img style="width: 64px; height:64px" src="{weather.current.condition.icon || 'img/index.png'}" alt="weather" /></div>
+        <div class="col-6 float-right "><img style="width: 64px; height:64px" src="{weather.current.condition.icon || 'img/index.png'}" alt="weather" /> <br> <span>{weather.current.condition.text}</span></div>
     </div>
     <div class="speed-button">
         <h3>{speed}</h3>

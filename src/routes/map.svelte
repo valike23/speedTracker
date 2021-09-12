@@ -1,6 +1,6 @@
 <script lang="ts">
     import axios from "axios";
-
+    import {goto} from '@sapper/app';
     import { onMount } from "svelte";
     import type { Iweather } from "../Model/map";
     let win: any = {};
@@ -82,6 +82,7 @@
 </script>
 
 <svelte:head>
+    <title>SpeedTrack :: Map Page</title>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -112,7 +113,7 @@
                  <!-- else content here -->
             {/if}
         </div>
-        <div class="col-6 float-right "><img style="width: 64px; height:64px" src="{weather.current.condition.icon || 'img/index.png'}" alt="weather" /> <br> <span>{weather.current.condition.text}</span></div>
+        <div on:click="{()=>{goto('weather')}}" class="col-6 float-right "><img style="width: 64px; height:64px" src="{weather.current.condition.icon || 'img/index.png'}" alt="weather" /> <br> <span>{weather.current.condition.text}</span></div>
     </div>
     <div class="speed-button">
         <h3>{speed}</h3>

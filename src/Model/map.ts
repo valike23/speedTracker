@@ -54,3 +54,10 @@ interface IairQuality {
     "us-epa-index"?: number;
     "gb-defra-index"?: number;
 }
+
+export interface IweatherImage {
+    code?: number;
+    peroid?: string;
+    img?: Array<string>;
+
+}

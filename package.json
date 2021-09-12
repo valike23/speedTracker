@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "speedtracker",
+  "description": "speed tracker app is a simple map solution that is expected to grow...",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -10,6 +10,7 @@
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "compression": "^1.7.1",
     "express": "^4.17.1",
     "polka": "next",

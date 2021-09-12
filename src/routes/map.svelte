@@ -69,7 +69,7 @@
                 lat = position.coords.latitude;
                 long = position.coords.longitude;
             });
-            let data = await axios.get(`api/map/weather`);
+            let data = await axios.get(`api/map/weather?lat=${lat}&long=${long}`);
              weather = data.data;
             console.log(weather);
             handleWeather(weather);

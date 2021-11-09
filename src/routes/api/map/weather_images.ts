@@ -1,5 +1,6 @@
 import type { IweatherImage } from "../../../Model/map";
 
+
 let data: Array<IweatherImage> = [
     {
     code: 1000,

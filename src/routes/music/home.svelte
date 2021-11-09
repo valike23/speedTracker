@@ -23,7 +23,7 @@ import MusicBtmNav from "../../components/MusicBtmNav.svelte";
         data-cls-icon="fg-white"
  >
     </form>
-<MusicBtmNav/>
+<MusicBtmNav active="home"/>
 </div>
 <style>
     .main{

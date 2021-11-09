@@ -1,14 +1,16 @@
-
+<script lang="ts">
+export let active;
+</script>
 <div class="bottom-nav pos-absolute bottom">
     <button class="button bottom">
-        <span class="icon mif-home"></span>
+        <span class:fg-red={active == 'home'} class="icon mif-home"></span>
         
     </button>
     <button class="button bottom">
-        <span class="icon mif-heart"></span>
+        <span class:fg-red={active == 'favorites'} class="icon mif-heart"></span>
     </button>
     <button class="button bottom">
-        <span class="icon mif-user"></span>
+        <span class:fg-red={active == 'user'} class="icon mif-user"></span>
     </button>
 </div>
 <style>
